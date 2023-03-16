@@ -1,0 +1,89 @@
+$color_1: #b9b9b9;
+$color_2: rgb(0, 0, 0);
+$font-family_1: 'Russo One', sans-serif;
+$font-family_2: Roboto, Verdana, Tahoma, sans;
+
+.text {
+	font-family: $font-family_1;
+	color: $color_1;
+}
+.text2 {
+	font-family: $font-family_1;
+}
+.text3 {
+	font-size: small;
+	color: $color_1;
+}
+.button {
+	border: none;
+	outline: none;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: $font-family_2;
+	padding: 12px 16px;
+	border-radius: 100px;
+	color: $color_2;
+	i {
+		margin-right: 4px;
+	}
+	+ {
+		.button {
+			margin-left: 6px;
+		}
+	}
+	&:hover {
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	}
+	&:hover.q {
+		background: #b9b9b9;
+	}
+	&:active {
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	}
+	&:active.q {
+		background: #b9b9b9;
+	}
+}
+.button.q {
+	background: #b9b9b9;
+}
+#scroll_top {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 1000;
+	width: 32px;
+	height: 32px;
+	background: src="img/kisspng-residenza-le-giare-restaurant-suite-accommodation-5c6cc68308f842.2776100015506325790368.jpg" 50% 50% no-repeat;
+	border-radius: 50%;
+	opacity: 0.5;
+	&:hover {
+		opacity: 1;
+	}
+}
+.back_to_top {
+	position: fixed;
+	bottom: 100px;
+	right: 60px;
+	z-index: 9999;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: #0059ff9f;
+	color: $color_2;
+	cursor: pointer;
+	border-radius: 2px;
+	display: none;
+	&:hover {
+		background: #b9b9b970;
+	}
+}
+.back_to_top-show {
+	display: block;
+}
